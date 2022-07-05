@@ -1,0 +1,117 @@
+
+.section{
+   min-height: 100vh;
+   display: block;
+   padding: 0 30px;
+}
+
+
+.home {
+   padding-top: 100px;
+   background: #f2f2fc;
+   display: flex;
+   min-height: 100vh;
+   color: #302e4d;
+   .home-img{
+      text-align: center;
+      position: relative;
+
+      &::after{
+         content: '';
+         position: absolute;
+         height: 80px;
+         width: 80px;
+         right: 20px;
+         bottom: -40px;
+         border-bottom: 10px solid orangered;
+         border-right: 10px solid orangered;
+
+      }
+      &::before{
+         content: '';
+         position: absolute;
+         height: 80px;
+         width: 80px;
+         left: 20px;
+         top: -40px;
+         border-top: 10px solid orangered;
+         border-left: 10px solid orangered;
+
+      }
+
+      img{
+      height: 300px;
+      width: 300px;
+      margin: auto;
+      border-radius: 5px;
+      }
+   }
+
+   .home-info{
+
+      .hello{
+         font-size: 28px;
+         margin: 15px 0;
+         span{
+            font-family: 'clicker Script',cursive;
+            font-size: 30px;
+            font-weight: 700;
+            color: orangered;
+         }
+      }
+
+      .my-profession{
+         font-size: 30px;
+         margin: 15px 0;
+         line-height: 40px;
+
+         .typing{
+            color: orangered;
+         }
+      }
+      p{
+         font-size: 20px;
+         color: #504e70;
+         margin-bottom: 70px;
+         line-height: 38px;
+      }
+
+      .btn{
+         font-size: 16px;
+         font-weight: 500;
+         padding: 12px 35px;
+         background: orangered;
+         color: white;
+         border-radius: 40px;
+         white-space: nowrap;
+         transition: .3s;
+
+         &:hover{
+            transform: scale(1.05);
+         }
+      }
+   }
+}
+
+
+
+.padd-15{
+padding-right: 15px;
+padding-left: 15px;
+}
+
+.margin-b{
+   margin-bottom: 100px;
+}
+
+@media(max-width:620){
+   .home-info{
+      margin-bottom: 80px;
+   }
+}
+
+.dote{
+   font-size: 40px;
+   font-weight: 600;
+   color: orangered;
+}

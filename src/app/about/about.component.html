@@ -1,0 +1,159 @@
+<section class="about section">
+   <div class="container">
+      <div class="row">
+         <div class="section-title padd-15">
+            <h2>About Me</h2>
+         </div>
+      </div>
+
+      <div class="row mt-5">
+         <div class="about-content padd-15">
+            <div class="row">
+               <div class="about-text">
+                  <h3>I am Hussein Alzeer and I am a <span>Front-End Developer</span></h3>
+                  <p>Hardworking and passionate job seeker with strong organizational skills, eager to secure a FrontEnd entry level position. Willing to help the team achieve company goals.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="row mt-5">
+         <div class="personal-info col-md-7 padd-15 mb-5 ">
+            <div class="row">
+               <div class="info-item ">
+                  <p>Birthday : <span> 24 May 1996</span></p>
+               </div>
+               <div class="info-item">
+                  <p>Age :     <span >26</span></p>
+               </div>
+               <div class="info-item">
+                  <p>Degree : <span class="s-1" style="font-size: 12px;">BSc Software Engineering</span></p>
+               </div>
+               <div class="info-item">
+                  <p>Email : <span class="s-1">hu.alzeer@gmail.com</span></p>
+               </div>
+               <div class="info-item">
+                  <p>Phone : <span class="s-1">+49 1573 5725814</span></p>
+               </div>
+               <div class="info-item">
+                  <p>Location : <span style="font-size: 12px; ">Regengasse 9, 50171 Kerpen</span></p>
+               </div>
+            </div>
+            <div class="row mt-3">
+               <div class="buttons">
+                  <a href="../../assets/HUSSEIN aLZEER.pdf" download="Hussein_Alzeer_cv.pdf" class="btn">Download CV</a>
+               </div>
+            </div>
+         </div>
+         <div class="skills col-md-5 padd-15 mb-5">
+            <div class="row">
+               <div class="skill-item padd-15" >
+                  <h5>Angular </h5>
+                  <div class="progress" >
+                     <div class="progress-in" style="width: 50% ;"></div>
+                     <div class="skill-persent">%</div>
+                  </div>
+               </div>
+
+               <div class="skill-item padd-15" >
+                  <h5>HTML</h5>
+                  <div class="progress" >
+                     <div class="progress-in" style="width: 100%;"></div>
+                     <div class="skill-persent"> 100%</div>
+                  </div>
+               </div>
+
+
+               <div class="skill-item padd-15"  >
+                  <h5>CSS </h5>
+                  <div class="progress" >
+                     <div class="progress-in" style="width: 500px;"></div>
+                     <div class="skill-persent"></div>
+                  </div>
+               </div>
+
+
+               <div class="skill-item padd-15"  >
+                  <h5>Bootstrap</h5>
+                  <div class="progress" >
+                     <div class="progress-in" style="width: 80%;"></div>
+                     <div class="skill-persent"></div>
+                  </div>
+               </div>
+
+
+               <div class="skill-item padd-15"  >
+                  <h5>Firebase</h5>
+                  <div class="progress" >
+                     <div class="progress-in" style="width: 50%;"></div>
+                     <div class="skill-persent"></div>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <hr>
+      <div class="row">
+         <div class="education col-md-6 col-sm-12~">
+            <h3 class="title">Education</h3>
+            <div class="row">
+               <div class="timeline-box padd-15 col-md-12">
+                  <div class="timeline shadow-dark">
+                     <!-- time line information-->
+                     <div class="timeline-item" *ngFor="let posts of Education ">
+                        <div class="circle-dot"></div>
+                           <h3 class="timeline-date">
+                              <i class="fa-regular fa-calendar"></i>{{posts.yearStart}} - {{posts.yearEnd}} 
+                           </h3>
+                           <h4 class="timeline-title">{{posts.title}} </h4>
+                           <p class="timeline-text">
+                              {{posts.text}}
+                            </p>
+                            <p class="timeline-text">
+                              {{posts.text2}}
+                            </p>
+                            <p class="timeline-text">
+                              {{posts.text3}}
+                            </p>  
+                        
+                     </div>
+
+
+                   
+
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="experience col-md-6 col-sm-12">
+            <h3 class="title">Experience</h3>
+            <div class="row">
+               <div class="timeline-box padd-15 col-md-12">
+                  <div class="timeline shadow-dark">
+                     <!-- time line information-->
+                     <div class="timeline-item" *ngFor="let spe of exper">
+                        <div class="circle-dot"></div>
+                           <h3 class="timeline-date">
+                              <i class="fa-regular fa-calendar"></i>{{spe.yearStart}} - {{spe.yearEnd}} 
+                           </h3>
+                           <h4 class="timeline-title">{{spe.title}} </h4>
+                           <p class="timeline-text">
+                              {{spe.text}}
+                           </p>
+                           <p class="timeline-text">
+                              {{spe.text2}}
+                           </p>
+                           
+                     </div> 
+                  </div>
+               </div>
+            </div><!-- row end-->
+
+         </div>
+
+
+      </div>
+   </div>
+</section>

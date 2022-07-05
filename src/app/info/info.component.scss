@@ -1,0 +1,114 @@
+.section{
+   min-height: 100vh;
+   display: block;
+   padding: 0 30px;
+   background: #f2f2fc;
+
+}
+
+
+.info{
+
+   .section-title{
+      h2{
+      font-size:40px ;
+      color: #302e4d;
+      font-weight: 700;
+      position: relative;
+      padding-top: 70px;
+
+      &::before{
+         content: '';
+         height: 3px;
+         width: 50px;
+         background: orangered;
+         position: absolute;
+         top: 100%;
+         left: 0;
+      }
+      &::after{
+         content: '';
+         height: 3px;
+         width: 25px;
+         background: orangered;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         margin-top: 8px;
+      }
+      }
+   }
+
+   .info-item{
+      margin-top: 30px;
+
+      .info-item-inner{
+         background-color: #fdf9ff;
+         border: 1px solid #e8dfec;
+         text-align: center;
+         border-radius: 10px;
+         padding: 15px 15px;
+
+         transition: ease-in-out 0.3s all;
+
+         &:hover{
+            box-shadow: 0 0 20px  rgba(48, 46, 77, 0.15);
+            background: orangered;
+         }
+
+         &:hover{
+            .icon{
+               background: white;
+
+               i{
+                  color: orangered;
+                  font-size: 30px;
+               }
+            }
+            .info-title{
+               color: white;
+            }
+            p{
+               color: white;
+            }
+         }
+
+         .icon{
+            height: 60px ;
+            width: 60px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 30px;
+            background: orangered;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            i{
+               font-size: 40px;
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%,-50%);
+               color: white;
+               transition: all 0.3s ease-in-out;
+
+            }
+         }
+
+         .info-title{
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #302e4d;
+            font-weight: 700;
+            text-transform: capitalize;
+            transition: ease-in-out 0.3s;
+         }
+
+         p{
+            font-size: 16px;
+            color: #504e70;
+            line-height: 15px;
+            transition: ease-in-out 0.3s;
+         }
+      }
+   }
+}

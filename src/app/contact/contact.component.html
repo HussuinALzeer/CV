@@ -1,0 +1,107 @@
+<section class="contact section">
+   <div class="container">
+      <div class="row">
+         <div class="section-title padd-15">
+            <h2>Contact Me</h2>
+         </div>
+      </div>
+
+      <h3 class="contact-title"> Do you have any questions?</h3>
+      <h4 class="contact-sub-title">I am at your service</h4>
+
+      <div class="row">
+         <div class="contact-info-item padd-15 col-md-4  col-sm-12 ">
+            <div class="icon"><img src="../../assets/smartphone.png" width="40px" alt=""></div>
+            <h4>Call me at</h4>
+            <p>+49 1573 5725814</p>
+         </div>
+
+         <div class="contact-info-item padd-15  col-md-4 col-sm-12 ">
+            <div class="icon"><img src="../../assets/gmail.png" width="40px" alt=""></div>
+            <h4>Email</h4>
+            <p>hu.alzeer@gmail.com</p>
+         </div>
+
+         <div class="contact-info-item  padd-15 col-md-4 col-sm-12">
+            <div class="icon"><img src="../../assets/placeholder.png" width="40px" alt=""></div>
+            <h4>Location</h4>
+            <p>Regengasse 9</p>
+            <p>50171 Kerpen</p>
+         </div>
+
+      </div>
+
+      <h3 class="contact-title"> Send me a message</h3>
+      <h4 class="contact-sub-title">I will respond to your message</h4>
+
+      
+      <div class="row"  style="background: rgb(202, 202, 202); padding-top:20px  ; border-radius: 25px; margin-bottom: 50px;"> 
+         <form [formGroup]="messageForm"  >
+         <div class="contact-form padd-15 ">
+            <div class="row">
+               <!-- item-->
+               <div class=" col-md-6 col-sm-12 padd-15">
+                  <!-- <div class="form-group">
+                     <input type="text" class="form-control" placeholder="name"
+                     formControlName="name"
+                     >
+                  </div> -->
+                  <mat-form-field appearance="fill">
+                     <mat-label>Name</mat-label>
+                     <input matInput placeholder="Placeholder" formControlName="name">
+                     
+                   </mat-form-field>
+               </div>
+               <!-- item-->
+               <div class=" col-md-6 col-sm-12 padd-15">
+                  <!-- <div class="form-group">
+                     <input type="Email" class="form-control" placeholder="Email"
+                     formControlName="email">
+                  </div> -->
+                    <mat-form-field appearance="fill">
+                        <mat-label>Phone Number</mat-label>
+                        <input matInput placeholder="Placeholder" formControlName="email">
+                        
+                     </mat-form-field>
+               </div>
+
+               <!-- item-->
+               <div class="row">
+                  <div class=" col-12 padd-15">
+                     <!-- <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Jubject"
+                        formControlName="subject"
+                        >
+                     </div> -->
+                     <mat-form-field appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Placeholder" formControlName="subject">
+                        
+                      </mat-form-field>
+                  </div>
+               </div>
+
+                <!-- item-->
+                <div class="row">
+                  <div class=" col-12 padd-15  ">
+                     <!-- <div class="form-group">
+                        <textarea name="" class="form-control" placeholder="Message" id="" cols="30" rows="10"
+                        formControlName="text"
+                        ></textarea>
+                     </div> -->
+                  
+                     <mat-form-field appearance="fill">
+                        <mat-label>Your Message ....</mat-label>
+                        <textarea matInput  formControlName="text" name="" id="" cols="30" rows="10"></textarea>
+                      </mat-form-field>
+                  </div>
+               </div>
+               <div class="row" style="position: relative; padding-bottom: 50px;">
+               <button mat-raised-button color="warn" (click)="sendForm()" align="end">Send it</button>
+                  </div>
+            </div>
+         </div>
+               </form>
+      </div>
+   </div>
+</section>

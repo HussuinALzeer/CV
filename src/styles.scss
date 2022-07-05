@@ -1,1 +1,163 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+   background: #f2f2fc;
+}
+
+
+.mat-tab-label {
+   height: 48px;
+   padding: 0 24px;
+   cursor: pointer;
+   box-sizing: border-box;
+   opacity: .6;
+   min-width: 160px;
+   text-align: center;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   white-space: nowrap;
+   position: relative;
+   color: white;
+   background: #c9c9cf;
+   width: 140px !important;
+   margin-top: 10%;
+   border-radius: 8px;
+
+}
+
+
+.mat-tab-labels{
+   width: 300px;
+   background: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+.shadow-dark{
+   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.padd-15{
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex{
+      border-radius: 50px;
+}
+
+mat-form-field-appearance-fill mat-form-field-flex {
+border-radius: 25px;
+}
+
+
+@media(max-width:1115px ){
+   .mat-tab-label-container{
+      visibility: visible;
+   }
+   .mat-tab-header{
+      visibility: visible;
+      width: 150px;
+   }
+
+   span.s-1{
+      font-size: 12px;
+   }
+
+   .mat-tab-labels{
+      width: 50px;
+      background:white !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+   }
+
+   .mat-tab-label {
+      height: 48px;
+      padding: 0 24px;
+      cursor: pointer;
+      box-sizing: border-box;
+      opacity: .6;
+      min-width: 49px !important;
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+      position: relative;
+      max-width: 70px !important;
+  }
+   .mat-ripple {
+      width: 40px;
+   }
+
+   .mat-tab-label-container{
+      width: 50px;
+      background: white;
+   }
+   .mat-tab-list{
+      transform: translateX(20px) !important;
+      
+    
+   }
+   .mat-ripple .mat-tab-header-pagination .mat-tab-header-pagination-before{
+      visibility: hidden;
+      width: 0;
+   }
+
+   .mat-tab-header{
+      width: 100px;
+   }
+
+   .mat-tab-header-pagination-controls-enabled
+   {
+      visibility: hidden ;
+   }
+
+   .mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+      visibility: hidden;
+  }
+}
+
+
+
+
+@media(max-width:982){
+   span{
+      font-size: 11px;
+   }
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+   border-radius: 15px !important;
+   padding: 0.75em 0.75em 0 0.75em;
+   background: white;
+   color: black;
+
+  
+}
+
+.mat-form-field-empty.mat-form-field-label, .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+   display: block;
+   color: black;
+}
+
+.mat-form-field-underline {
+   position: absolute;
+   width: 100%;
+   pointer-events: none;
+   transform: scale3d(1, 1.0001, 1);
+   visibility: hidden;
+}
+
+
+
+.mat-tab-label-active{
+background: orangered;
+}
